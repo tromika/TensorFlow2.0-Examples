@@ -21,6 +21,14 @@
       "name": "Configure Jupyter",
       "command": "cp -rf .jupyter /root/",
       "runAtStart": true
+    },
+    "Jupyter Notebook": {
+      "name": "Jupyter Notebook",
+      "command": "jupyter notebook --allow-root"
+    },
+    "Tensorboard": {
+      "Tensorboard",
+      "command": "rm -rf logs && python 8-Tensorboard/tensorboard_example.py && tensorboard --logdir=logs  --port=8008"
     }
   }
 }
