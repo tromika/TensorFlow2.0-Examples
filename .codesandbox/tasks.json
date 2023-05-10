@@ -1,0 +1,34 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "python 1-Introduction/helloworld.py": {
+      "name": "python 1-Introduction/helloworld.py",
+      "command": "python 1-Introduction/helloworld.py"
+    },
+    "python 1-Introduction/basic_operations.py ": {
+      "name": "python 1-Introduction/basic_operations.py ",
+      "command": "python 1-Introduction/basic_operations.py "
+    },
+    "docker-compose up": {
+      "name": "Postgres",
+      "command": "docker-compose up",
+      "runAtStart": true
+    },
+    "cp -r .jupyter /home/root/": {
+      "name": "Configure Jupyter",
+      "command": "cp -rf .jupyter /root/",
+      "runAtStart": true
+    },
+    "Jupyter Notebook": {
+      "name": "Jupyter Notebook",
+      "command": "jupyter notebook --allow-root"
+    },
+    "Tensorboard": {
+      "Tensorboard",
+      "command": "rm -rf logs && python 8-Tensorboard/tensorboard_example.py && tensorboard --logdir=logs  --port=8008"
+    }
+  }
+}
